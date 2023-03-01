@@ -1,0 +1,34 @@
+.list-1 {
+  width: 100px;
+  background: #007100;
+  margin: 1;
+  padding: 10px;
+}
+
+.list-2 {
+  width: 200px;
+  background: #006100;
+  margin: 2;
+  padding: 20px;
+}
+
+.list-3 {
+  width: 300px;
+  background: #005200;
+  margin: 3;
+  padding: 30px;
+}
+
+.list-4 {
+  width: 400px;
+  background: #004300;
+  margin: 4;
+  padding: 40px;
+}
+
+.list-5 {
+  width: 500px;
+  background: #003400;
+  margin: 5;
+  padding: 50px;
+}/*# sourceMappingURL=style.css.map */

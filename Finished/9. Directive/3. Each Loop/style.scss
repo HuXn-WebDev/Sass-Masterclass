@@ -1,0 +1,16 @@
+$colors: green teal yellowgreen yellow;
+
+@each $color in $colors {
+  .#{$color} {
+    background: $color;
+  }
+}
+
+body {
+  display: flex;
+}
+
+div {
+  flex: 1 1 auto;
+  height: 100vh;
+}

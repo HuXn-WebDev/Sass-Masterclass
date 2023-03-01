@@ -1,0 +1,100 @@
+// Conditional Stamtent
+
+// IF
+
+// $value: 5;
+
+// p {
+//   @if 1 + 1 == 2 {
+//     background: teal;
+//   }
+
+//   @if 10 > 3 {
+//     background: pink;
+//   }
+
+//   @if $value < 6 {
+//     color: blue;
+//   }
+// }
+
+// $value: 2;
+
+// p {
+//   @if $value == 1 {
+//     color: blue;
+//   } @else if $value > 5 and $value < 10 {
+//     color: teal;
+//   } @else {
+//     color: red;
+//   }
+// }
+
+// ---------- USING WITH MIXINS
+// @mixin styles($value) {
+//   width: $value + px;
+//   height: $value + px;
+
+//   @if $value > 0 and $value <= 20 {
+//     color: orange;
+//   } @else if $value > 20 and $value <= 50 {
+//     color: teal;
+//   } @else {
+//     color: purple;
+//   }
+// }
+
+// .selector {
+//     @include styles(15);
+//     @include styles(25);
+//   @include styles(100);
+// }
+
+// ------------------- FUNCTIONS
+$one: 100px;
+$two: 4;
+
+@function math($opt, $num1, $num2) {
+  @if $opt == "add" {
+    @return $num1 + $num2;
+  }
+
+  @if $opt == "subtract" {
+    @return $num1 - $num2;
+  }
+
+  @if $opt == "multiplay" {
+    @return $num1 * $num2;
+  }
+
+  @if $opt == "divide" {
+    @return $num1 / $num2;
+  }
+
+  @if $opt == "mod" {
+    @return $num1 % $num2;
+  }
+}
+
+section {
+  background: teal;
+  // Add
+  //   width: math("add", $one, $two);
+  //   height: math("add", $one, $two);
+
+  // Subtract
+  //   width: math("subtract", $one, $two);
+  //   height: math("subtract", $one, $two);
+
+  // Multiplay
+  //   width: math("multiplay", $one, $two);
+  //   height: math("multiplay", $one, $two);
+
+  // Divide
+  //   width: math("divide", $one, $two);
+  //   height: math("divide", $one, $two);
+
+  // MOD
+  width: math("mod", $one, $two);
+  height: math("mod", $one, $two);
+}

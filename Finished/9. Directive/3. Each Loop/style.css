@@ -1,0 +1,24 @@
+.green {
+  background: green;
+}
+
+.teal {
+  background: teal;
+}
+
+.yellowgreen {
+  background: yellowgreen;
+}
+
+.yellow {
+  background: yellow;
+}
+
+body {
+  display: flex;
+}
+
+div {
+  flex: 1 1 auto;
+  height: 100vh;
+}/*# sourceMappingURL=style.css.map */
