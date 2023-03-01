@@ -1,0 +1,88 @@
+// .selector {
+//     // MATH FUNCTIONS
+// //   padding: max(10px, 50px, 20px, 60px, 2px);
+// //   padding: min(10px, 50px, 20px, 60px, 2px);
+// //   padding: random();
+// //   padding: random(10);
+// //   padding: unit(20em);
+// //   padding: unitless(20);
+
+// }
+
+// STRING FUNCTIONS
+// .selector {
+//   font-family: quote(arial);
+//   font-family: unquote(arial);
+//   font-family: to-upper-case("huxn");
+//   font-family: to-lower-case("HUXN");
+//   font-family: str-length("HuXn");
+//   font-family: str-index("HuXn", "X");
+//   font-family: str-insert("HuXn", "X", 4);
+//   font-family: unique-id();
+// }
+
+// COLOR FUNCTIONS
+// $inital-color: blue;
+
+// .container {
+//   width: 600px;
+//   height: 100px;
+//     background: darken($inital-color, 40);
+//     background: lighten($inital-color, 30);
+//     background: adjust-hue($inital-color, 90);
+//   background: mix($inital-color, red, 70);
+// }
+
+// --------------------------
+// $list: 20px 10px 30px;
+
+// .selector {
+//   padding: length($list);
+//   padding: nth($list, 3);
+//   padding: set-nth($list, 3, 2em);
+//   padding: join((10px, 20px, 30px), (40px 50px, 60px));
+//   padding: join((10px, 20px, 30px), (40px 50px, 60px), space);
+//   padding: append($list, 60px);
+// }
+
+// ---------------------------------
+// Maps
+
+// $font-weights: (
+//   "regular": 400,
+//   "medium": 500,
+//   "bold": 700,
+// );
+
+// .selector {
+//   font-weight: map-get($font-weights, "medium");
+//   font-weight: map-keys($font-weights);
+//   font-weight: map-values($font-weights);
+//   font-weight: map-has-key($font-weights, "huxn");
+// }
+
+// -----------------------------------------------
+
+// CREATING CUSTOM FUNCTIONS
+// EXAMPLE 1
+// $one: 100px;
+// $two: 100px;
+
+// @function add($numberOne, $numberTwo) {
+//   @return $numberOne + $numberTwo;
+// }
+
+// section {
+//   width: add(10, 40);
+// }
+
+// EXAMPLE 2
+// @function randomColor() {
+//   @return rgb(random(255), random(255), random(255));
+// }
+
+// section {
+//   width: 100px;
+//   height: 100px;
+//   background: randomColor();
+// }
