@@ -1,0 +1,32 @@
+// Header Area
+main {
+  background: url("https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  h1 {
+    font-size: 3rem;
+    color: #fff;
+  }
+
+  p {
+    max-width: 600px;
+    margin: 10px;
+  }
+
+  button {
+    background: transparent;
+    border: none;
+    background: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+}

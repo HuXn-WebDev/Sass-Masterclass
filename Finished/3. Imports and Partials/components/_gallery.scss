@@ -1,0 +1,22 @@
+// Gallery
+.gallery {
+  margin-top: 6rem;
+
+  h1 {
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 5rem;
+  }
+
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gallery-img {
+    width: 300px;
+    margin: 20px;
+  }
+}

@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  font-family: sans-serif;
+  position: fixed;
+  width: 100%;
+  background: white;
+}
+nav .logo-container {
+  margin-left: 40px;
+}
+nav ul {
+  margin-right: 40px;
+}
+nav ul li {
+  display: inline;
+  list-style: none;
+  margin-left: 30px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+main {
+  background: url("https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+main p {
+  max-width: 600px;
+  margin: 10px;
+}
+main button {
+  background: transparent;
+  border: none;
+  background: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.card {
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.card .card-content {
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+  margin: 0 6rem;
+  font-family: sans-serif;
+}
+.card .card-content h1 {
+  font-size: 3rem;
+  font-family: serif;
+}
+.card .card-content p {
+  margin: 20px 0;
+  margin-bottom: 40px;
+  line-height: 1.5rem;
+}
+.card .card-content a {
+  text-decoration: none;
+  color: #fff;
+  background: #000;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+.card .card-img {
+  width: 400px;
+}
+
+.gallery {
+  margin-top: 6rem;
+}
+.gallery h1 {
+  text-align: center;
+  font-family: sans-serif;
+  margin-bottom: 5rem;
+}
+.gallery .images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.gallery .gallery-img {
+  width: 300px;
+  margin: 20px;
+}
+
+footer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer input {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+footer textarea {
+  padding: 20px;
+  width: 420px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+  background: #000;
+  padding: 10px 20px;
+  font-family: sans-serif;
+}
+
+@media screen and (max-width: 750px) {
+  .card {
+    height: 100vh;
+  }
+}/*# sourceMappingURL=style.css.map */
