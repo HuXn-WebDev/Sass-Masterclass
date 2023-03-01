@@ -1,0 +1,25 @@
+.selector {
+  // EQUALITY OPERATORS
+  //   padding: 10px == 10px;
+  //   padding: 10px == 10em;
+  //   padding: 10px == 20px;
+  //   font-family: "arial" == arial;
+  //   padding: (6px 20px 10px) == (6px 8px 10px);
+
+  // RELATIONAL OPERATORS
+  //   padding: 10px > 30px;
+  //   padding: 10px < 30px;
+  //   padding: 10px >= 30px;
+  //   padding: 10px <= 30px;
+
+  // BOOLEAN OPERATORS
+  padding: arial == "arial" and 10px == 10;
+  padding: arial == "arial" and 10px == 20px;
+  padding: arial == "roboto" and 10px == 20px;
+
+  padding: arial == "arial" or 10px == 20px;
+  padding: arial == "playfair" or 10px == 20px;
+
+  padding: not 10px == 10px;
+  padding: not 10px != 10px;
+}
